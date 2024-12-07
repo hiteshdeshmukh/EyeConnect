@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translation_description="Blind Helper">Advanced Blind Helper</string>
+    <string name="speech_prompt">say hello</string>
+    <string name="speech_not_supported">not supported</string>
+    <string name="editText_hint">Enter city name</string>
+    <string name="weather_img">weather image</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="batter_percentage">battery</string>
+    <string name="hour_minute_am_pm">Hour \t\t\t\t\t\t\t\t\t Minute AM/PM</string>
+    <string name="translated_text_hint">Translated text</string>
+    <string name="downloaded_models_label">Downloaded models: %1$s</string>
+    <string name="delete_model">Delete Model</string>
+    <string name="download_model">Download Model</string>
+    <string name="unknown_error">Unknown error occurred.</string>
+    <string name="source_text_hint">Source text</string>
+
+    <string name="features">
+        say <b>read</b> to read the text using camera.
+        \n Say <b>Object detection</b> to detect  the object.
+        \n say <b>Calculator</b> to perform mathematical calculations.
+        \n Say <b>Weather</b> to get weather details.
+        \n Say <b>Navigation</b> to navigate to the destination.
+        \n Say <b>Location</b> to get location details.
+        \n Say <b>Battery</b> to get battery percentage.
+        \n Say <b>Time and Date</b> for time and date.
+        \n Say <b>Message reader</b> to read the messages.
+        \n Say <b>Music</b> to transfer the amount using phone number.
+         \n Say <b>Reminder</b> to create reminder.
+        \n  Say <b>note</b> create notes.
+         \n Say <b>qr</b> to open qr product identification.
+         \n Say <b>translate</b> to translate open translator.
+         \n Say <b>phone transfer</b> to transfer amount using phone number.
+         \n Say <b>bank transfer</b> to transfer amount using account number.
+        \n Say <b>back</b> to return to Home screen
+        \n Say <b>Exit </b> to close the application.
+    </string>
+
+</resources>

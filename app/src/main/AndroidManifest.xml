@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tensorflow.lite.examples.detection">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/blind"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/blind"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ObjectDetection">
+
+        <activity android:name=".Reminder.ReminderActivity" />
+        <activity android:name=".Reminder.Reminder" />
+        <activity android:name=".Moneytransfer.Banktransfer" />
+        <activity android:name=".Moneytransfer.phonetransfer" />
+        <activity android:name=".QRProduct.QRactivity" />
+        <activity android:name=".QRProduct.QRresult" />
+        <activity android:name=".Reminder.NotificationMessage" />
+        <activity android:name=".Note.Notes" />
+        <activity android:name=".Translate.TranslateActivity" />
+        <activity android:name=".Note.NoteActivity" />
+
+        <activity
+            android:name=".Calling.CallActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Music.Music"
+            android:exported="true" />
+        <activity
+            android:name=".Message.MessageReader"
+            android:exported="true" />
+        <activity
+            android:name=".ObjectDetection.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Features"
+            android:exported="true" />
+        <activity
+            android:name=".OCRReader"
+            android:exported="true" />
+
+        <activity
+            android:name=".Navigation.MapsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Navigation.Navigation"
+            android:exported="true" />
+        <activity
+            android:name=".Location.LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Battery"
+            android:exported="true" />
+        <activity
+            android:name=".Weather"
+            android:exported="true" />
+        <activity
+            android:name=".DateAndTime"
+            android:exported="true" />
+        <activity
+            android:name=".Calculator"
+            android:exported="true" />
+
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Location.GetAllData" /> <!-- To get location API we need to generate key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAdz5sjzrAIjfg-L2pHZOqgjjpGN4vhkZM" />
+        <receiver
+            android:name=".Reminder.AlarmBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Reminder.AlarmService" />
+    </application>
+
+
+</manifest>
