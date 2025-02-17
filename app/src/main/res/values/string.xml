@@ -19,18 +19,18 @@
         \n Say <b>Object detection</b> to detect  the object.
         \n say <b>Calculator</b> to perform mathematical calculations.
         \n Say <b>Weather</b> to get weather details.
-        \n Say <b>Navigation</b> to navigate to the destination.
+<!--        \n Say <b>Navigation</b> to navigate to the destination.-->
         \n Say <b>Location</b> to get location details.
         \n Say <b>Battery</b> to get battery percentage.
         \n Say <b>Time and Date</b> for time and date.
         \n Say <b>Message reader</b> to read the messages.
         \n Say <b>Music</b> to transfer the amount using phone number.
-         \n Say <b>Reminder</b> to create reminder.
+<!--         \n Say <b>Reminder</b> to create reminder.-->
         \n  Say <b>note</b> create notes.
-         \n Say <b>qr</b> to open qr product identification.
-         \n Say <b>translate</b> to translate open translator.
-         \n Say <b>phone transfer</b> to transfer amount using phone number.
-         \n Say <b>bank transfer</b> to transfer amount using account number.
+<!--         \n Say <b>qr</b> to open qr product identification.-->
+<!--         \n Say <b>translate</b> to translate open translator.-->
+<!--         \n Say <b>phone transfer</b> to transfer amount using phone number.-->
+<!--         \n Say <b>bank transfer</b> to transfer amount using account number.-->
         \n Say <b>back</b> to return to Home screen
         \n Say <b>Exit </b> to close the application.
     </string>

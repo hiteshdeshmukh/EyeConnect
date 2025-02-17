@@ -67,7 +67,7 @@ public class GetAllData extends IntentService {
         } else {
             Address address = addresses.get(0);
             addressDetails = "Locality is, " + address.getSubLocality() + "." + "\n" + "City is ," + address.getLocality() + "." + "\n" +
-                    "State is, " + address.getAdminArea() + "." + "\n" + address.getCountryName() + "." + "\n";
+                    "State is, " + address.getAdminArea() + "." + "\n" + "Postal Code " + address.getPostalCode() + address.getSubAdminArea() + "\n";
             sendResultsToReceiver(2, addressDetails);
             sendResultsToReceiver(3, address.getLocality());
         }
